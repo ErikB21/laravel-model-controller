@@ -1,0 +1,39 @@
+header {
+  border-bottom: 1px solid #ff8906;
+  width: 100%;
+  background-color: #0f0e17;
+}
+
+header nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+header nav .logo {
+  width: 60px;
+  height: 60px;
+}
+
+header nav .logo img {
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #a7a9be;
+}
+
