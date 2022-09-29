@@ -4,23 +4,20 @@
 
 @section('content')
 
-    <!-- <div class="container">
-        <h1>Lista Film</h1>
-        <ul>
-            @forelse($movies as $movie)
-                <li>{{$movie->id}} - {{$movie->title}}</li>
-            @empty
-                <li>Nessun Risultato!</li>
-            @endforelse
-        </ul>
-    </div> -->
-
-    <div class="card">
-        <h3>Title</h3>
-        <span>Original title</span>
-        <span>Lang</span>
-        <span>Year</span>
-        <span>Date</span>
+    <div class="container4">
+    @forelse($movies as $movie)
+        <div class="card">
+            <h2><a href="">{{$movie->title}}</a></h2>
+            <span>{{$movie->original_title}}</span>
+            <span>{{$movie->nationality}}</span>
+            <span>{{$movie->date}}</span>
+            <span>{{$movie->vote}}</span>
+        </div>
+    @empty
+        <h4>Nessun Risultato!</h4>
+    @endforelse
     </div>
+
+    
 
 @endsection
